@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HomeListConfigurationViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:HomeListConfigurationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((getFibaroSections in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; (([Int : String]) -&gt; ()) -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importZones in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(importFibaroSections #1)([Int : String])():HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importRooms in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(importFibaroRooms #1)([Int : String])():HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeListConfigurationViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():HomeListConfigurationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importRooms in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).((importFibaroRooms #1)([Int : String]) -&gt; ()).(closure #1).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importSections in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.(importRooms in _62397828DBD5946CEA8DA8D3D10870B3)() -&gt; ():HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeListConfigurationViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:HomeListConfigurationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeListConfigurationViewController.(indexPathIsAdd in _F850330A6313092590D91712DB37F2E7)(NSIndexPath) -&gt; Bool:HomeListConfigurationViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importZones in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).((importFibaroSections #1)([Int : String]) -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.(importSections in _62397828DBD5946CEA8DA8D3D10870B3)(([Int : String], [HMZone]) -&gt; ()) -&gt; ():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objectCollection.rooms">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importRooms in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).((importFibaroRooms #1)([Int : String]) -&gt; ()).(closure #1).(closure #1).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importRooms in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.((importSections in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; (([Int : String]) -&gt; ()) -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

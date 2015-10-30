@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA934C51BE3A2C000B012D0 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA934C41BE3A2C000B012D0 /* Privacy.html */; };
 		5FB109881BD53A6700A8F91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109871BD53A6700A8F91D /* AppDelegate.swift */; };
 		5FB1098E1BD53A8400A8F91D /* FibaroSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109891BD53A8400A8F91D /* FibaroSetupViewController.swift */; };
 		5FB1098F1BD53A8400A8F91D /* HMCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1098A1BD53A8400A8F91D /* HMCatalogViewController.swift */; };
@@ -95,6 +96,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5FA934C41BE3A2C000B012D0 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		5FB109871BD53A6700A8F91D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FibaroHomeKitTool/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		5FB109891BD53A8400A8F91D /* FibaroSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibaroSetupViewController.swift; path = FibaroHomeKitTool/FibaroSetupViewController.swift; sourceTree = SOURCE_ROOT; };
 		5FB1098A1BD53A8400A8F91D /* HMCatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMCatalogViewController.swift; path = FibaroHomeKitTool/HMCatalogViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -385,6 +387,7 @@
 		DC1310B51A14201E004E5DB5 = {
 			isa = PBXGroup;
 			children = (
+				5FA934C41BE3A2C000B012D0 /* Privacy.html */,
 				6A10AEE81AF84BEA000A2CD6 /* FibaroHomeKitTool.entitlements */,
 				DC1310ED1A1438CB004E5DB5 /* FibaroHomeKitTool */,
 				DC1310BF1A14201E004E5DB5 /* Products */,
@@ -494,6 +497,7 @@
 				5FB109DF1BD53AE400A8F91D /* CharacteristicCell.xib in Resources */,
 				5FB109E31BD53AE400A8F91D /* SliderCharacteristicCell.xib in Resources */,
 				5FB109E11BD53AE400A8F91D /* SegmentedControlCharacteristicCell.xib in Resources */,
+				5FA934C51BE3A2C000B012D0 /* Privacy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -648,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,11 +670,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/FibaroHomeKitTool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
 				PRODUCT_NAME = FibaroHomeKitTool;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "656a9818-5d12-458c-91d2-df81b4c70138";
 			};
 			name = Debug;
 		};
@@ -683,11 +687,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/FibaroHomeKitTool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
 				PRODUCT_NAME = FibaroHomeKitTool;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d7943d6c-1f8b-448f-9216-b55ce92bc58d";
 			};
 			name = Release;
 		};

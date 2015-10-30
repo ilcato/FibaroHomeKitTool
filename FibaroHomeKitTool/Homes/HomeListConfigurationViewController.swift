@@ -11,9 +11,10 @@ import HomeKit
 
 // Represents the sections in the `HomeListConfigurationViewController`.
 enum HomeListSection: Int {
-    case Homes, PrimaryHome, FibaroSetup
+    case Homes, FibaroSetup
     
-    static let count = 3
+    static let count = 2
+    
 }
 
 /**
@@ -44,10 +45,6 @@ class HomeListConfigurationViewController: HomeListViewController {
             case .Homes?:
                 return homes.count + 1
 
-            // 'No homes' row.
-            case .PrimaryHome?:
-                return max(homes.count, 1)
-            
             // Setup Fibaro
             case .FibaroSetup?:
                 return 1
@@ -63,41 +60,18 @@ class HomeListConfigurationViewController: HomeListViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPathIsAdd(indexPath) {
             return tableView.dequeueReusableCellWithIdentifier(Identifiers.addHomeCell, forIndexPath: indexPath)
-        }
-        else if homes.isEmpty {
-            return tableView.dequeueReusableCellWithIdentifier(Identifiers.noHomesCell, forIndexPath: indexPath)
-        }
-        
-        let reuseIdentifier: String
-
-        switch HomeListSection(rawValue: indexPath.section) {
-            case .Homes?:
-                reuseIdentifier = Identifiers.homeCell
-
-            case .PrimaryHome?:
-                reuseIdentifier = Identifiers.primaryHomeCell
-            
-            case .FibaroSetup?:
-                return tableView.dequeueReusableCellWithIdentifier(Identifiers.configureFibaroCell, forIndexPath: indexPath)
-            
-            case nil: fatalError("Unexpected `HomeListSection` raw value.")
+        } else if HomeListSection(rawValue: indexPath.section) == .FibaroSetup {
+            return tableView.dequeueReusableCellWithIdentifier(Identifiers.configureFibaroCell, forIndexPath: indexPath)
         }
         
+        let reuseIdentifier: String = Identifiers.homeCell
+
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
         let home = homes[indexPath.row]
         
         cell.textLabel!.text = home.name
         cell.detailTextLabel?.text = sharedTextForHome(home)
         
-        // Mark the primary home with checkmark.
-        if HomeListSection(rawValue: indexPath.section) == .PrimaryHome {
-            if home == homeManager.primaryHome {
-                cell.accessoryType = .Checkmark
-            }
-            else {
-                cell.accessoryType = .None
-            }
-        }
         
         return cell
     }
@@ -109,18 +83,12 @@ class HomeListConfigurationViewController: HomeListViewController {
     
     /// Only the 'primary home' section has a title.
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if HomeListSection(rawValue: section) == .PrimaryHome {
-            return NSLocalizedString("Primary Home", comment: "Primary Home")
-        }
 
         return nil
     }
     
     /// Provides subtext about the use of designating a "primary home".
     override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if section == HomeListSection.PrimaryHome.rawValue {
-            return NSLocalizedString("The primary home is used by Siri to route commands if the home is not specified.", comment: "Primary Home Description")
-        }
         return nil
     }
     
@@ -134,13 +102,9 @@ class HomeListConfigurationViewController: HomeListViewController {
         if indexPathIsAdd(indexPath) {
             addNewHome()
         }
-        else if indexPathIsNone(indexPath) {
+        else {
             return
         }
-        else if HomeListSection(rawValue: indexPath.section) == .PrimaryHome {
-            let newPrimaryHome = homes[indexPath.row]
-            updatePrimaryHome(newPrimaryHome)
-        } 
     }
     
     /// Removes the home from HomeKit if the row is deleted.
@@ -173,9 +137,7 @@ class HomeListConfigurationViewController: HomeListViewController {
     
     /// Reloads the 'primary home' section.
     private func didUpdatePrimaryHome() {
-        let primaryIndexSet = NSIndexSet(index: HomeListSection.PrimaryHome.rawValue)
       
-        tableView.reloadSections(primaryIndexSet, withRowAnimation: .Automatic)
     }
     
     /**
@@ -220,19 +182,11 @@ class HomeListConfigurationViewController: HomeListViewController {
 
         let indexPath = NSIndexPath(forRow: index, inSection: HomeListSection.Homes.rawValue)
         homes.removeAtIndex(index)
-        let primaryIndexPath = NSIndexPath(forRow: index, inSection: HomeListSection.PrimaryHome.rawValue)
-        
         /*
             If there aren't any homes, we still want one cell to display 'No Homes'.
             Just reload.
         */
         tableView.beginUpdates()
-        if homes.isEmpty {
-            tableView.reloadRowsAtIndexPaths([primaryIndexPath], withRowAnimation: .Fade)
-        }
-        else {
-            tableView.deleteRowsAtIndexPaths([primaryIndexPath], withRowAnimation: .Automatic)
-        }
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         tableView.endUpdates()
 
@@ -246,16 +200,8 @@ class HomeListConfigurationViewController: HomeListViewController {
 
         let indexPath = NSIndexPath(forRow: newHomeIndex, inSection: HomeListSection.Homes.rawValue)
         
-        let primaryIndexPath = NSIndexPath(forRow: newHomeIndex, inSection: HomeListSection.PrimaryHome.rawValue)
         
         tableView.beginUpdates()
-        
-        if homes.count == 1 {
-            tableView.reloadRowsAtIndexPaths([primaryIndexPath], withRowAnimation: .Fade)
-        }
-        else {
-            tableView.insertRowsAtIndexPaths([primaryIndexPath], withRowAnimation: .Automatic)
-        }
         
         tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         tableView.endUpdates()
@@ -283,26 +229,12 @@ class HomeListConfigurationViewController: HomeListViewController {
             indexPath.row == homes.count
     }
     
-    /// - returns:  `true` if the index path is the 'No Homes' cell; `false` otherwise.
-    private func indexPathIsNone(indexPath: NSIndexPath) -> Bool {
-        return HomeListSection(rawValue: indexPath.section) == .PrimaryHome && homes.isEmpty
-    }
-    
     // MARK: HMHomeDelegate Methods
     
     /// Finds the home in the internal structure and reloads the corresponding row.
     override func homeDidUpdateName(home: HMHome) {
-        if let index = homes.indexOf(home) {
-            let listIndexPath = NSIndexPath(forRow: index, inSection: HomeListSection.Homes.rawValue)
-
-            let primaryIndexPath = NSIndexPath(forRow: index, inSection: HomeListSection.PrimaryHome.rawValue)
-            
-            tableView.reloadRowsAtIndexPaths([listIndexPath, primaryIndexPath], withRowAnimation: .Automatic)
-        }
-        else {
             // Just reload the data since we don't know the index path.
             tableView.reloadData()
-        }
     }
     
     // MARK: HMHomeManagerDelegate Methods

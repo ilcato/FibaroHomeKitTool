@@ -18,7 +18,21 @@ class FibaroSetupViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        if let _ = defaults.objectForKey("host") as? String {
+            self.fibaroHost.text = (defaults.objectForKey("host") as! String)
+        }
+        
+        if let _ = defaults.objectForKey("username") as? String {
+            self.fibaroUserName.text = (defaults.objectForKey("username") as! String)
+        }
+        
+        if let _ = defaults.objectForKey("password") as? String {
+            self.fibaroPassword.text = (defaults.objectForKey("password") as! String)
+        }
+        
         self.updateHomeStoreFibaroCredentials()
         
         // Uncomment the following line to preserve selection between presentations
@@ -26,6 +40,18 @@ class FibaroSetupViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setObject(self.fibaroHost.text, forKey: "host")
+        defaults.setObject(self.fibaroUserName.text, forKey: "username")
+        defaults.setObject(self.fibaroPassword.text, forKey: "password")
+        
+        defaults.synchronize()
     }
 
     override func didReceiveMemoryWarning() {

@@ -185,18 +185,11 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
     
     /// Reloads the trigger section.
     private func updateTriggerAddRow() {
-        let triggerSection = NSIndexSet(index: HomeKitObjectSection.Trigger.rawValue)
      
-        tableView.reloadSections(triggerSection, withRowAnimation: .Automatic)
     }
     
     /// Reloads the action set section.
     private func updateActionSetSection() {
-        let actionSetSection = NSIndexSet(index: HomeKitObjectSection.ActionSet.rawValue)
-     
-        tableView.reloadSections(actionSetSection, withRowAnimation: .Automatic)
-        
-        updateTriggerAddRow()
     }
     
     /// - returns:  `true` if there are accessories within the home; `false` otherwise.
@@ -248,18 +241,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                 
             case .Zone?:
                 return NSLocalizedString("Zones", comment: "Zones")
-                
-            case .User?:
-                return NSLocalizedString("Users", comment: "Users")
-                
-            case .ActionSet?:
-                return NSLocalizedString("Scenes", comment: "Scenes")
-                
-            case .Trigger?:
-                return NSLocalizedString("Triggers", comment: "Triggers")
-                
-            case .ServiceGroup?:
-                return NSLocalizedString("Service Groups", comment: "Service Groups")
             
             case nil:
                 fatalError("Unexpected `HomeKitObjectSection` raw value.")
@@ -279,17 +260,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
             case .Zone:
                 return NSLocalizedString("Import Zones from Fibaro Home Center 2…", comment: "Import Rooms from Fibaro Home Center 2")
             
-            case .User:
-                return NSLocalizedString("Manage Users…", comment: "Manage Users")
-            
-            case .ActionSet:
-                return NSLocalizedString("Add Scene…", comment: "Add Scene")
-            
-            case .Trigger:
-                return NSLocalizedString("Add Trigger…", comment: "Add Trigger")
-            
-            case .ServiceGroup:
-                return NSLocalizedString("Add Service Group…", comment: "Add Service Group")
         }
     }
     
@@ -305,18 +275,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
             case .Zone:
                 return NSLocalizedString("No Zones…", comment: "No Zones")
             
-            case .User:
-                // We only ever list 'Manage Users'.
-                return NSLocalizedString("Manage Users…", comment: "Manage Users")
-            
-            case .ActionSet:
-                return NSLocalizedString("No Scenes…", comment: "No Scenes")
-            
-            case .Trigger:
-                return NSLocalizedString("No Triggers…", comment: "No Triggers")
-            
-            case .ServiceGroup:
-                return NSLocalizedString("No Service Groups…", comment: "No Service Groups")
         }
     }
     
@@ -326,18 +284,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
             case .Zone?:
                 return NSLocalizedString("Zones are optional collections of rooms.", comment: "Zones Description")
                 
-            case .User?:
-                return NSLocalizedString("Users can control the accessories in your home. You can share your home with anybody with an iCloud account.", comment: "Users Description")
-                
-            case .ActionSet?:
-                return NSLocalizedString("Scenes (action sets) represent a state of your home. You must have at least one paired accessory to create a scene.", comment: "Scenes Description")
-                
-            case .Trigger?:
-                return NSLocalizedString("Triggers set scenes at specific times, when you get to locations, or when a characteristic is in a specific state. You must have created at least one scene with an action to create a trigger.", comment: "Trigger Description")
-                
-            case .ServiceGroup?:
-                return NSLocalizedString("Service groups organize services in a custom way. For example, add a subset of lights in your living room to control them without controlling all the lights in the living room.", comment: "Service Group Description")
-
             case nil:
                 fatalError("Unexpected `HomeKitObjectSection` raw value.")
             
@@ -353,10 +299,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionEnum = HomeKitObjectSection(rawValue: section)!
         
-        // Only "Manage Users" button is in the Users section
-        if sectionEnum == .User {
-            return 1
-        }
         
         let objectCount = objectCollection.objectsForSection(sectionEnum).count
         if home.isAdmin {
@@ -405,11 +347,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
 
         let section = HomeKitObjectSection(rawValue: indexPath.section)
 
-        if (!canAddActionSet && section == .ActionSet) ||
-            (!canAddTrigger && section == .Trigger) || !home.isAdmin {
-                reuseIdentifier = Identifiers.disabledAddCell
-        }
-        
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
         
         cell.textLabel!.text = titleForAddRowInSection(section!)
@@ -435,19 +372,7 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                 
             case .Zone?:
                 return Identifiers.zoneCell
-                
-            case .User?:
-                return Identifiers.userCell
-                
-            case .ActionSet?:
-                return Identifiers.actionSetCell
-                
-            case .Trigger?:
-                return Identifiers.triggerCell
-                
-            case .ServiceGroup?:
-                return Identifiers.serviceGroupCell
-                
+            
             case nil:
                 fatalError("Unexpected `HomeKitObjectSection` raw value.")
         }
@@ -472,21 +397,7 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
             case .Zone?:
                 let zone = homeKitObject as! HMZone
                 name = zone.name
-            case .User?:
-                name = ""
-                
-            case .ActionSet?:
-                let actionSet = homeKitObject as! HMActionSet
-                name = actionSet.name
-                
-            case .Trigger?:
-                let trigger = homeKitObject as! HMTrigger
-                name = trigger.name
-                
-            case .ServiceGroup?:
-                let serviceGroup = homeKitObject as! HMServiceGroup
-                name = serviceGroup.name
-                
+            
             case nil:
                 fatalError("Unexpected `HomeKitObjectSection` raw value.")
         }
@@ -556,22 +467,7 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                 case .Zone:
                     importZones()
                 
-                case .User:
-                    manageUsers()
-                
-                case .ActionSet:
-                    addNewActionSet()
-                
-                case .Trigger:
-                    addNewTrigger()
-                
-                case .ServiceGroup:
-                    addNewServiceGroup()
             }
-        }
-        else if section == .ActionSet {
-            let selectedActionSet = homeKitObjectAtIndexPath(indexPath) as! HMActionSet
-            executeActionSet(selectedActionSet)
         }
     }
     
@@ -579,24 +475,6 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
     override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath)
 
-        if HomeKitObjectSection(rawValue: indexPath.section) == .Trigger {
-            let trigger = homeKitObjectAtIndexPath(indexPath)
-
-            switch trigger {
-                case is HMTimerTrigger:
-                    performSegueWithIdentifier(Identifiers.showTimerTriggerSegue, sender: cell)
-
-                case let eventTrigger as HMEventTrigger:
-                    if eventTrigger.isLocationEvent {
-                        performSegueWithIdentifier(Identifiers.showLocationTriggerSegue, sender: cell)
-                    }
-                    else {
-                        performSegueWithIdentifier(Identifiers.showCharacteristicTriggerSegue, sender: cell)
-                    }
-                
-                default: break
-            }
-        }
     }
     
     // MARK: Action Methods
@@ -665,6 +543,10 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
             let task = session!.dataTaskWithURL(shotsUrl!) {
                 (data, response, error) -> Void in
             
+                if error != nil {
+                    self.displayError(error!)
+                    return
+                }
                 do {
                     let roomsJson = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSArray
                     var rooms = [Int : String]()
@@ -698,7 +580,9 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                                     return
                                 }
                                 zone!.addRoom(newRoom!) {error in
-                                    self.displayError(error!)
+                                    if error != nil {
+                                        self.displayError(error!)
+                                    }
                                     return
                                 }
                             }
@@ -706,7 +590,8 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                     }
                     self.importDevices(rooms)
                 } catch _ {
-                    print("Error")
+                    self.displayMessage("Error getting info from Fibaro Home Center…", message: "Check credentials")
+                    return
                 }
             }
             task.resume()
@@ -741,6 +626,10 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
         let task = session!.dataTaskWithURL(shotsUrl!) {
             (data, response, error) -> Void in
             
+            if error != nil {
+                self.displayError(error!)
+                return
+            }
             do {
                 let devices = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSArray
                 for d in devices {
@@ -774,7 +663,8 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                     }
                 }
             } catch _ {
-                print("Error")
+                self.displayMessage("Error getting info from Fibaro Home Center…", message: "Check credentials")
+                return
             }
         }
         task.resume()
@@ -794,6 +684,10 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
         let task = session!.dataTaskWithURL(shotsUrl!) {
             (data, response, error) -> Void in
             
+            if error != nil {
+                self.displayError(error!)
+                return
+            }
             do {
                 let sectionsJson = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSArray
                 for s in sectionsJson {
@@ -804,7 +698,8 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                     }
                 }
             } catch _ {
-                print("Error")
+                self.displayMessage("Error getting info from Fibaro Home Center…", message: "Check credentials")
+                return
             }
             callback(sections)
         }

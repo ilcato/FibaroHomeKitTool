@@ -11,9 +11,9 @@ import HomeKit
 
 /// Represents the all different types of HomeKit objects.
 enum HomeKitObjectSection: Int {
-    case Accessory, Room, Zone, User, ActionSet, Trigger, ServiceGroup
+    case Accessory, Room, Zone
     
-    static let count = 7
+    static let count = 3
 }
 
 /**
@@ -78,11 +78,6 @@ class HomeKitObjectCollection {
     */
     func indexPathOfObject(object: AnyObject) -> NSIndexPath? {
         switch object {
-            case let actionSet as HMActionSet:
-                if let index = actionSets.indexOf(actionSet) {
-                    return NSIndexPath(forRow: index, inSection: HomeKitObjectSection.ActionSet.rawValue)
-                }
-                
             case let accessory as HMAccessory:
                 if let index = accessories.indexOf(accessory) {
                     return NSIndexPath(forRow: index, inSection: HomeKitObjectSection.Accessory.rawValue)
@@ -97,17 +92,7 @@ class HomeKitObjectCollection {
                 if let index = zones.indexOf(zone) {
                     return NSIndexPath(forRow: index, inSection: HomeKitObjectSection.Zone.rawValue)
                 }
-                
-            case let trigger as HMTrigger:
-                if let index = triggers.indexOf(trigger) {
-                    return NSIndexPath(forRow: index, inSection: HomeKitObjectSection.Trigger.rawValue)
-                }
-                
-            case let serviceGroup as HMServiceGroup:
-                if let index = serviceGroups.indexOf(serviceGroup) {
-                    return NSIndexPath(forRow: index, inSection: HomeKitObjectSection.ServiceGroup.rawValue)
-                }
-                
+            
             default: break
         }
 
@@ -165,9 +150,6 @@ class HomeKitObjectCollection {
     */
     func objectsForSection(section: HomeKitObjectSection) -> [NSObject] {
         switch section {
-            case .ActionSet:
-                return actionSets
-                
             case .Accessory:
                 return accessories
                 
@@ -177,14 +159,6 @@ class HomeKitObjectCollection {
             case .Zone:
                 return zones
                 
-            case .Trigger:
-                return triggers
-                
-            case .ServiceGroup:
-                return serviceGroups
-                
-            default:
-                return []
         }
     }
     
@@ -197,9 +171,7 @@ class HomeKitObjectCollection {
     */
     class func sectionForObject(object: AnyObject?) -> HomeKitObjectSection? {
         switch object {
-            case is HMActionSet:
-                return .ActionSet
-                
+            
             case is HMAccessory:
                 return .Accessory
                 
@@ -208,13 +180,7 @@ class HomeKitObjectCollection {
                 
             case is HMRoom:
                 return .Room
-                
-            case is HMTrigger:
-                return .Trigger
-                
-            case is HMServiceGroup:
-                return .ServiceGroup
-                
+                                
             default:
                 return nil
         }

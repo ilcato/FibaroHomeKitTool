@@ -4,14 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HMCatalog.xcscheme</key>
+		<key>FibaroHomeCenterToolkit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5F0609891BEE738500C5E3A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DC1310BD1A14201E004E5DB5</key>
 		<dict>
 			<key>primary</key>

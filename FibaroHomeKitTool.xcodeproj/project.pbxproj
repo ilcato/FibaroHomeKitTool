@@ -7,83 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FA934C51BE3A2C000B012D0 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA934C41BE3A2C000B012D0 /* Privacy.html */; };
-		5FB109881BD53A6700A8F91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109871BD53A6700A8F91D /* AppDelegate.swift */; };
-		5FB1098E1BD53A8400A8F91D /* FibaroSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109891BD53A8400A8F91D /* FibaroSetupViewController.swift */; };
-		5FB1098F1BD53A8400A8F91D /* HMCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1098A1BD53A8400A8F91D /* HMCatalogViewController.swift */; };
-		5FB109901BD53A8400A8F91D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1098B1BD53A8400A8F91D /* Launch Screen.storyboard */; };
-		5FB109911BD53A8400A8F91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1098C1BD53A8400A8F91D /* Main.storyboard */; };
-		5FB109921BD53A8400A8F91D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1098D1BD53A8400A8F91D /* TabBarController.swift */; };
-		5FB109941BD53AAE00A8F91D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109931BD53AAE00A8F91D /* Images.xcassets */; };
-		5FB109971BD53AC800A8F91D /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109951BD53AC800A8F91D /* FavoritesManager.swift */; };
-		5FB109981BD53AC800A8F91D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109961BD53AC800A8F91D /* FavoritesViewController.swift */; };
-		5FB109D91BD53AE400A8F91D /* AccessoryBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099B1BD53AE400A8F91D /* AccessoryBrowserViewController.swift */; };
-		5FB109DA1BD53AE400A8F91D /* AccessoryUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099C1BD53AE400A8F91D /* AccessoryUpdateController.swift */; };
-		5FB109DB1BD53AE400A8F91D /* ControlsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099D1BD53AE400A8F91D /* ControlsTableViewDataSource.swift */; };
-		5FB109DC1BD53AE400A8F91D /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099E1BD53AE400A8F91D /* ControlsViewController.swift */; };
-		5FB109DD1BD53AE400A8F91D /* ModifyAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099F1BD53AE400A8F91D /* ModifyAccessoryViewController.swift */; };
-		5FB109DE1BD53AE400A8F91D /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A21BD53AE400A8F91D /* CharacteristicCell.swift */; };
-		5FB109DF1BD53AE400A8F91D /* CharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A31BD53AE400A8F91D /* CharacteristicCell.xib */; };
-		5FB109E01BD53AE400A8F91D /* SegmentedControlCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A41BD53AE400A8F91D /* SegmentedControlCharacteristicCell.swift */; };
-		5FB109E11BD53AE400A8F91D /* SegmentedControlCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A51BD53AE400A8F91D /* SegmentedControlCharacteristicCell.xib */; };
-		5FB109E21BD53AE400A8F91D /* SliderCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A61BD53AE400A8F91D /* SliderCharacteristicCell.swift */; };
-		5FB109E31BD53AE400A8F91D /* SliderCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A71BD53AE400A8F91D /* SliderCharacteristicCell.xib */; };
-		5FB109E41BD53AE400A8F91D /* SwitchCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A81BD53AE400A8F91D /* SwitchCharacteristicCell.swift */; };
-		5FB109E51BD53AE400A8F91D /* SwitchCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A91BD53AE400A8F91D /* SwitchCharacteristicCell.xib */; };
-		5FB109E61BD53AE400A8F91D /* TextCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AA1BD53AE400A8F91D /* TextCharacteristicCell.swift */; };
-		5FB109E71BD53AE400A8F91D /* TextCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109AB1BD53AE400A8F91D /* TextCharacteristicCell.xib */; };
-		5FB109E81BD53AE400A8F91D /* CharacteristicsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AC1BD53AE400A8F91D /* CharacteristicsTableViewDataSource.swift */; };
-		5FB109E91BD53AE400A8F91D /* CharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AD1BD53AE400A8F91D /* CharacteristicsViewController.swift */; };
-		5FB109EA1BD53AE400A8F91D /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AE1BD53AE400A8F91D /* ServiceCell.swift */; };
-		5FB109EB1BD53AE400A8F91D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AF1BD53AE400A8F91D /* ServicesViewController.swift */; };
-		5FB109EC1BD53AE400A8F91D /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B11BD53AE400A8F91D /* ActionCell.swift */; };
-		5FB109ED1BD53AE400A8F91D /* ActionSetCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B21BD53AE400A8F91D /* ActionSetCreator.swift */; };
-		5FB109EE1BD53AE400A8F91D /* ActionSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B31BD53AE400A8F91D /* ActionSetViewController.swift */; };
-		5FB109EF1BD53AE400A8F91D /* HomeKitObjectCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B41BD53AE400A8F91D /* HomeKitObjectCollection.swift */; };
-		5FB109F01BD53AE400A8F91D /* HomeListConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B51BD53AE400A8F91D /* HomeListConfigurationViewController.swift */; };
-		5FB109F11BD53AE400A8F91D /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B61BD53AE400A8F91D /* HomeListViewController.swift */; };
-		5FB109F21BD53AE400A8F91D /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B71BD53AE400A8F91D /* HomeStore.swift */; };
-		5FB109F31BD53AE400A8F91D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B81BD53AE400A8F91D /* HomeViewController.swift */; };
-		5FB109F41BD53AE400A8F91D /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BA1BD53AE400A8F91D /* RoomViewController.swift */; };
-		5FB109F51BD53AE400A8F91D /* AddServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BC1BD53AE400A8F91D /* AddServicesViewController.swift */; };
-		5FB109F61BD53AE400A8F91D /* ServiceGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BD1BD53AE400A8F91D /* ServiceGroupViewController.swift */; };
-		5FB109F71BD53AE400A8F91D /* CharacteristicSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C11BD53AE400A8F91D /* CharacteristicSelectionViewController.swift */; };
-		5FB109F81BD53AE400A8F91D /* CharacteristicTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C21BD53AE400A8F91D /* CharacteristicTriggerCreator.swift */; };
-		5FB109F91BD53AE400A8F91D /* CharacteristicTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C31BD53AE400A8F91D /* CharacteristicTriggerViewController.swift */; };
-		5FB109FA1BD53AE400A8F91D /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C51BD53AE400A8F91D /* ConditionCell.swift */; };
-		5FB109FB1BD53AE400A8F91D /* SegmentedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C61BD53AE400A8F91D /* SegmentedTimeCell.swift */; };
-		5FB109FC1BD53AE400A8F91D /* TimeConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C71BD53AE400A8F91D /* TimeConditionViewController.swift */; };
-		5FB109FD1BD53AE400A8F91D /* TimePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C81BD53AE400A8F91D /* TimePickerCell.swift */; };
-		5FB109FE1BD53AE400A8F91D /* EventTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C91BD53AE400A8F91D /* EventTriggerCreator.swift */; };
-		5FB109FF1BD53AE400A8F91D /* EventTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CA1BD53AE400A8F91D /* EventTriggerViewController.swift */; };
-		5FB10A001BD53AE400A8F91D /* LocationTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CC1BD53AE400A8F91D /* LocationTriggerCreator.swift */; };
-		5FB10A011BD53AE400A8F91D /* LocationTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CD1BD53AE400A8F91D /* LocationTriggerViewController.swift */; };
-		5FB10A021BD53AE400A8F91D /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CF1BD53AE400A8F91D /* MapOverlayView.swift */; };
-		5FB10A031BD53AE400A8F91D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D01BD53AE400A8F91D /* MapViewController.swift */; };
-		5FB10A041BD53AE400A8F91D /* TimerTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D21BD53AE400A8F91D /* TimerTriggerCreator.swift */; };
-		5FB10A051BD53AE400A8F91D /* TimerTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D31BD53AE400A8F91D /* TimerTriggerViewController.swift */; };
-		5FB10A061BD53AE400A8F91D /* TriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D41BD53AE400A8F91D /* TriggerCreator.swift */; };
-		5FB10A071BD53AE400A8F91D /* TriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D51BD53AE400A8F91D /* TriggerViewController.swift */; };
-		5FB10A081BD53AE400A8F91D /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D71BD53AE400A8F91D /* AddRoomViewController.swift */; };
-		5FB10A091BD53AE400A8F91D /* ZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D81BD53AE400A8F91D /* ZoneViewController.swift */; };
-		5FB10A191BD53AF900A8F91D /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0B1BD53AF900A8F91D /* Array+Sorting.swift */; };
-		5FB10A1A1BD53AF900A8F91D /* CNMutablePostalAddress+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0C1BD53AF900A8F91D /* CNMutablePostalAddress+Convenience.swift */; };
-		5FB10A1B1BD53AF900A8F91D /* HMActionSet+BuiltIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0D1BD53AF900A8F91D /* HMActionSet+BuiltIn.swift */; };
-		5FB10A1C1BD53AF900A8F91D /* HMCharacteristic+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0E1BD53AF900A8F91D /* HMCharacteristic+Properties.swift */; };
-		5FB10A1D1BD53AF900A8F91D /* HMEventTrigger+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0F1BD53AF900A8F91D /* HMEventTrigger+Convenience.swift */; };
-		5FB10A1E1BD53AF900A8F91D /* HMHome+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A101BD53AF900A8F91D /* HMHome+Properties.swift */; };
-		5FB10A1F1BD53AF900A8F91D /* HMService+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A111BD53AF900A8F91D /* HMService+Properties.swift */; };
-		5FB10A201BD53AF900A8F91D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10A121BD53AF900A8F91D /* Info.plist */; };
-		5FB10A211BD53AF900A8F91D /* NSPredicate+Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A131BD53AF900A8F91D /* NSPredicate+Condition.swift */; };
-		5FB10A221BD53AF900A8F91D /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A141BD53AF900A8F91D /* UIAlertController+Convenience.swift */; };
-		5FB10A231BD53AF900A8F91D /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A151BD53AF900A8F91D /* UIColor+Custom.swift */; };
-		5FB10A241BD53AF900A8F91D /* UIStoryboardSegue+IntendedDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A161BD53AF900A8F91D /* UIStoryboardSegue+IntendedDestination.swift */; };
-		5FB10A251BD53AF900A8F91D /* UITableViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A171BD53AF900A8F91D /* UITableViewController+Convenience.swift */; };
-		5FB10A261BD53AF900A8F91D /* UIViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A181BD53AF900A8F91D /* UIViewController+Convenience.swift */; };
+		5F06098B1BEE738500C5E3A8 /* TimePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C81BD53AE400A8F91D /* TimePickerCell.swift */; };
+		5F06098C1BEE738500C5E3A8 /* TriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D41BD53AE400A8F91D /* TriggerCreator.swift */; };
+		5F06098D1BEE738500C5E3A8 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0B1BD53AF900A8F91D /* Array+Sorting.swift */; };
+		5F06098E1BEE738500C5E3A8 /* CharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AD1BD53AE400A8F91D /* CharacteristicsViewController.swift */; };
+		5F06098F1BEE738500C5E3A8 /* UIStoryboardSegue+IntendedDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A161BD53AF900A8F91D /* UIStoryboardSegue+IntendedDestination.swift */; };
+		5F0609901BEE738500C5E3A8 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AE1BD53AE400A8F91D /* ServiceCell.swift */; };
+		5F0609911BEE738500C5E3A8 /* HomeKitObjectCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B41BD53AE400A8F91D /* HomeKitObjectCollection.swift */; };
+		5F0609921BEE738500C5E3A8 /* ServiceGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BD1BD53AE400A8F91D /* ServiceGroupViewController.swift */; };
+		5F0609931BEE738500C5E3A8 /* CharacteristicsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AC1BD53AE400A8F91D /* CharacteristicsTableViewDataSource.swift */; };
+		5F0609941BEE738500C5E3A8 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099E1BD53AE400A8F91D /* ControlsViewController.swift */; };
+		5F0609951BEE738500C5E3A8 /* ControlsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099D1BD53AE400A8F91D /* ControlsTableViewDataSource.swift */; };
+		5F0609961BEE738500C5E3A8 /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C51BD53AE400A8F91D /* ConditionCell.swift */; };
+		5F0609971BEE738500C5E3A8 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A21BD53AE400A8F91D /* CharacteristicCell.swift */; };
+		5F0609981BEE738500C5E3A8 /* UITableViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A171BD53AF900A8F91D /* UITableViewController+Convenience.swift */; };
+		5F0609991BEE738500C5E3A8 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BA1BD53AE400A8F91D /* RoomViewController.swift */; };
+		5F06099A1BEE738500C5E3A8 /* HMActionSet+BuiltIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0D1BD53AF900A8F91D /* HMActionSet+BuiltIn.swift */; };
+		5F06099B1BEE738500C5E3A8 /* HMCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1098A1BD53A8400A8F91D /* HMCatalogViewController.swift */; };
+		5F06099C1BEE738500C5E3A8 /* ActionSetCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B21BD53AE400A8F91D /* ActionSetCreator.swift */; };
+		5F06099D1BEE738500C5E3A8 /* NSPredicate+Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A131BD53AF900A8F91D /* NSPredicate+Condition.swift */; };
+		5F06099E1BEE738500C5E3A8 /* CNMutablePostalAddress+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0C1BD53AF900A8F91D /* CNMutablePostalAddress+Convenience.swift */; };
+		5F06099F1BEE738500C5E3A8 /* HMService+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A111BD53AF900A8F91D /* HMService+Properties.swift */; };
+		5F0609A01BEE738500C5E3A8 /* EventTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CA1BD53AE400A8F91D /* EventTriggerViewController.swift */; };
+		5F0609A11BEE738500C5E3A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B81BD53AE400A8F91D /* HomeViewController.swift */; };
+		5F0609A21BEE738500C5E3A8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109961BD53AC800A8F91D /* FavoritesViewController.swift */; };
+		5F0609A31BEE738500C5E3A8 /* LocationTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CD1BD53AE400A8F91D /* LocationTriggerViewController.swift */; };
+		5F0609A41BEE738500C5E3A8 /* ModifyAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099F1BD53AE400A8F91D /* ModifyAccessoryViewController.swift */; };
+		5F0609A51BEE738500C5E3A8 /* TimerTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D31BD53AE400A8F91D /* TimerTriggerViewController.swift */; };
+		5F0609A61BEE738500C5E3A8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D01BD53AE400A8F91D /* MapViewController.swift */; };
+		5F0609A71BEE738500C5E3A8 /* AddServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109BC1BD53AE400A8F91D /* AddServicesViewController.swift */; };
+		5F0609A81BEE738500C5E3A8 /* CharacteristicSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C11BD53AE400A8F91D /* CharacteristicSelectionViewController.swift */; };
+		5F0609A91BEE738500C5E3A8 /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B11BD53AE400A8F91D /* ActionCell.swift */; };
+		5F0609AA1BEE738500C5E3A8 /* AccessoryUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099C1BD53AE400A8F91D /* AccessoryUpdateController.swift */; };
+		5F0609AB1BEE738500C5E3A8 /* HMCharacteristic+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0E1BD53AF900A8F91D /* HMCharacteristic+Properties.swift */; };
+		5F0609AC1BEE738500C5E3A8 /* FibaroSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109891BD53A8400A8F91D /* FibaroSetupViewController.swift */; };
+		5F0609AD1BEE738500C5E3A8 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109951BD53AC800A8F91D /* FavoritesManager.swift */; };
+		5F0609AE1BEE738500C5E3A8 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B61BD53AE400A8F91D /* HomeListViewController.swift */; };
+		5F0609AF1BEE738500C5E3A8 /* SwitchCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A81BD53AE400A8F91D /* SwitchCharacteristicCell.swift */; };
+		5F0609B01BEE738500C5E3A8 /* SliderCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A61BD53AE400A8F91D /* SliderCharacteristicCell.swift */; };
+		5F0609B11BEE738500C5E3A8 /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D71BD53AE400A8F91D /* AddRoomViewController.swift */; };
+		5F0609B21BEE738500C5E3A8 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B71BD53AE400A8F91D /* HomeStore.swift */; };
+		5F0609B31BEE738500C5E3A8 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A151BD53AF900A8F91D /* UIColor+Custom.swift */; };
+		5F0609B41BEE738500C5E3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109871BD53A6700A8F91D /* AppDelegate.swift */; };
+		5F0609B51BEE738500C5E3A8 /* TimerTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D21BD53AE400A8F91D /* TimerTriggerCreator.swift */; };
+		5F0609B61BEE738500C5E3A8 /* AccessoryBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1099B1BD53AE400A8F91D /* AccessoryBrowserViewController.swift */; };
+		5F0609B71BEE738500C5E3A8 /* TriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D51BD53AE400A8F91D /* TriggerViewController.swift */; };
+		5F0609B81BEE738500C5E3A8 /* HMHome+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A101BD53AF900A8F91D /* HMHome+Properties.swift */; };
+		5F0609B91BEE738500C5E3A8 /* HMEventTrigger+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A0F1BD53AF900A8F91D /* HMEventTrigger+Convenience.swift */; };
+		5F0609BA1BEE738500C5E3A8 /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CF1BD53AE400A8F91D /* MapOverlayView.swift */; };
+		5F0609BB1BEE738500C5E3A8 /* ActionSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B31BD53AE400A8F91D /* ActionSetViewController.swift */; };
+		5F0609BC1BEE738500C5E3A8 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AF1BD53AE400A8F91D /* ServicesViewController.swift */; };
+		5F0609BD1BEE738500C5E3A8 /* LocationTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109CC1BD53AE400A8F91D /* LocationTriggerCreator.swift */; };
+		5F0609BE1BEE738500C5E3A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1098D1BD53A8400A8F91D /* TabBarController.swift */; };
+		5F0609BF1BEE738500C5E3A8 /* CharacteristicTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C21BD53AE400A8F91D /* CharacteristicTriggerCreator.swift */; };
+		5F0609C01BEE738500C5E3A8 /* SegmentedControlCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109A41BD53AE400A8F91D /* SegmentedControlCharacteristicCell.swift */; };
+		5F0609C11BEE738500C5E3A8 /* TimeConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C71BD53AE400A8F91D /* TimeConditionViewController.swift */; };
+		5F0609C21BEE738500C5E3A8 /* CharacteristicTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C31BD53AE400A8F91D /* CharacteristicTriggerViewController.swift */; };
+		5F0609C31BEE738500C5E3A8 /* UIViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A181BD53AF900A8F91D /* UIViewController+Convenience.swift */; };
+		5F0609C41BEE738500C5E3A8 /* TextCharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109AA1BD53AE400A8F91D /* TextCharacteristicCell.swift */; };
+		5F0609C51BEE738500C5E3A8 /* EventTriggerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C91BD53AE400A8F91D /* EventTriggerCreator.swift */; };
+		5F0609C61BEE738500C5E3A8 /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10A141BD53AF900A8F91D /* UIAlertController+Convenience.swift */; };
+		5F0609C71BEE738500C5E3A8 /* SegmentedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109C61BD53AE400A8F91D /* SegmentedTimeCell.swift */; };
+		5F0609C81BEE738500C5E3A8 /* HomeListConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109B51BD53AE400A8F91D /* HomeListConfigurationViewController.swift */; };
+		5F0609C91BEE738500C5E3A8 /* ZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB109D81BD53AE400A8F91D /* ZoneViewController.swift */; };
+		5F0609CC1BEE738500C5E3A8 /* SwitchCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A91BD53AE400A8F91D /* SwitchCharacteristicCell.xib */; };
+		5F0609CD1BEE738500C5E3A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109931BD53AAE00A8F91D /* Images.xcassets */; };
+		5F0609CE1BEE738500C5E3A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10A121BD53AF900A8F91D /* Info.plist */; };
+		5F0609CF1BEE738500C5E3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1098C1BD53A8400A8F91D /* Main.storyboard */; };
+		5F0609D01BEE738500C5E3A8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1098B1BD53A8400A8F91D /* Launch Screen.storyboard */; };
+		5F0609D11BEE738500C5E3A8 /* TextCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109AB1BD53AE400A8F91D /* TextCharacteristicCell.xib */; };
+		5F0609D21BEE738500C5E3A8 /* CharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A31BD53AE400A8F91D /* CharacteristicCell.xib */; };
+		5F0609D31BEE738500C5E3A8 /* SliderCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A71BD53AE400A8F91D /* SliderCharacteristicCell.xib */; };
+		5F0609D41BEE738500C5E3A8 /* SegmentedControlCharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB109A51BD53AE400A8F91D /* SegmentedControlCharacteristicCell.xib */; };
+		5F0609D51BEE738500C5E3A8 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA934C41BE3A2C000B012D0 /* Privacy.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CAA68A951AF0614300905CFE /* Embed App Extensions */ = {
+		5F0609D61BEE738500C5E3A8 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -96,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F0609DA1BEE738500C5E3A8 /* FibaroHomeCenterTollkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibaroHomeCenterTollkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0609DB1BEE738600C5E3A8 /* FibaroHomeKitTool copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FibaroHomeKitTool copy-Info.plist"; path = "/Users/andreacatozzi/Documents/Projects/FibaroHomeKitTool/FibaroHomeKitTool copy-Info.plist"; sourceTree = "<absolute>"; };
 		5FA934C41BE3A2C000B012D0 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		5FB109871BD53A6700A8F91D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FibaroHomeKitTool/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		5FB109891BD53A8400A8F91D /* FibaroSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibaroSetupViewController.swift; path = FibaroHomeKitTool/FibaroSetupViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -170,11 +172,10 @@
 		5FB10A171BD53AF900A8F91D /* UITableViewController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Convenience.swift"; sourceTree = "<group>"; };
 		5FB10A181BD53AF900A8F91D /* UIViewController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Convenience.swift"; sourceTree = "<group>"; };
 		6A10AEE81AF84BEA000A2CD6 /* FibaroHomeKitTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FibaroHomeKitTool.entitlements; sourceTree = "<group>"; };
-		DC1310BE1A14201E004E5DB5 /* FibaroHomeKitTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibaroHomeKitTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC1310BB1A14201E004E5DB5 /* Frameworks */ = {
+		5F0609CA1BEE738500C5E3A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,13 +392,14 @@
 				6A10AEE81AF84BEA000A2CD6 /* FibaroHomeKitTool.entitlements */,
 				DC1310ED1A1438CB004E5DB5 /* FibaroHomeKitTool */,
 				DC1310BF1A14201E004E5DB5 /* Products */,
+				5F0609DB1BEE738600C5E3A8 /* FibaroHomeKitTool copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		DC1310BF1A14201E004E5DB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC1310BE1A14201E004E5DB5 /* FibaroHomeKitTool.app */,
+				5F0609DA1BEE738500C5E3A8 /* FibaroHomeCenterTollkit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,22 +425,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC1310BD1A14201E004E5DB5 /* FibaroHomeKitTool */ = {
+		5F0609891BEE738500C5E3A8 /* FibaroHomeCenterTollkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC1310DD1A14201E004E5DB5 /* Build configuration list for PBXNativeTarget "FibaroHomeKitTool" */;
+			buildConfigurationList = 5F0609D71BEE738500C5E3A8 /* Build configuration list for PBXNativeTarget "FibaroHomeCenterTollkit" */;
 			buildPhases = (
-				DC1310BA1A14201E004E5DB5 /* Sources */,
-				DC1310BB1A14201E004E5DB5 /* Frameworks */,
-				DC1310BC1A14201E004E5DB5 /* Resources */,
-				CAA68A951AF0614300905CFE /* Embed App Extensions */,
+				5F06098A1BEE738500C5E3A8 /* Sources */,
+				5F0609CA1BEE738500C5E3A8 /* Frameworks */,
+				5F0609CB1BEE738500C5E3A8 /* Resources */,
+				5F0609D61BEE738500C5E3A8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FibaroHomeKitTool;
+			name = FibaroHomeCenterTollkit;
 			productName = sldkfjghslkjdgh;
-			productReference = DC1310BE1A14201E004E5DB5 /* FibaroHomeKitTool.app */;
+			productReference = 5F0609DA1BEE738500C5E3A8 /* FibaroHomeCenterTollkit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -450,20 +452,6 @@
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Apple, Inc";
-				TargetAttributes = {
-					DC1310BD1A14201E004E5DB5 = {
-						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = M6974NHFYY;
-						SystemCapabilities = {
-							com.apple.HomeKit = {
-								enabled = 1;
-							};
-							com.apple.WAC = {
-								enabled = 1;
-							};
-						};
-					};
-				};
 			};
 			buildConfigurationList = DC1310B91A14201E004E5DB5 /* Build configuration list for PBXProject "FibaroHomeKitTool" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -478,105 +466,139 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC1310BD1A14201E004E5DB5 /* FibaroHomeKitTool */,
+				5F0609891BEE738500C5E3A8 /* FibaroHomeCenterTollkit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DC1310BC1A14201E004E5DB5 /* Resources */ = {
+		5F0609CB1BEE738500C5E3A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB109E51BD53AE400A8F91D /* SwitchCharacteristicCell.xib in Resources */,
-				5FB109941BD53AAE00A8F91D /* Images.xcassets in Resources */,
-				5FB10A201BD53AF900A8F91D /* Info.plist in Resources */,
-				5FB109911BD53A8400A8F91D /* Main.storyboard in Resources */,
-				5FB109901BD53A8400A8F91D /* Launch Screen.storyboard in Resources */,
-				5FB109E71BD53AE400A8F91D /* TextCharacteristicCell.xib in Resources */,
-				5FB109DF1BD53AE400A8F91D /* CharacteristicCell.xib in Resources */,
-				5FB109E31BD53AE400A8F91D /* SliderCharacteristicCell.xib in Resources */,
-				5FB109E11BD53AE400A8F91D /* SegmentedControlCharacteristicCell.xib in Resources */,
-				5FA934C51BE3A2C000B012D0 /* Privacy.html in Resources */,
+				5F0609CC1BEE738500C5E3A8 /* SwitchCharacteristicCell.xib in Resources */,
+				5F0609CD1BEE738500C5E3A8 /* Images.xcassets in Resources */,
+				5F0609CE1BEE738500C5E3A8 /* Info.plist in Resources */,
+				5F0609CF1BEE738500C5E3A8 /* Main.storyboard in Resources */,
+				5F0609D01BEE738500C5E3A8 /* Launch Screen.storyboard in Resources */,
+				5F0609D11BEE738500C5E3A8 /* TextCharacteristicCell.xib in Resources */,
+				5F0609D21BEE738500C5E3A8 /* CharacteristicCell.xib in Resources */,
+				5F0609D31BEE738500C5E3A8 /* SliderCharacteristicCell.xib in Resources */,
+				5F0609D41BEE738500C5E3A8 /* SegmentedControlCharacteristicCell.xib in Resources */,
+				5F0609D51BEE738500C5E3A8 /* Privacy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC1310BA1A14201E004E5DB5 /* Sources */ = {
+		5F06098A1BEE738500C5E3A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB109FD1BD53AE400A8F91D /* TimePickerCell.swift in Sources */,
-				5FB10A061BD53AE400A8F91D /* TriggerCreator.swift in Sources */,
-				5FB10A191BD53AF900A8F91D /* Array+Sorting.swift in Sources */,
-				5FB109E91BD53AE400A8F91D /* CharacteristicsViewController.swift in Sources */,
-				5FB10A241BD53AF900A8F91D /* UIStoryboardSegue+IntendedDestination.swift in Sources */,
-				5FB109EA1BD53AE400A8F91D /* ServiceCell.swift in Sources */,
-				5FB109EF1BD53AE400A8F91D /* HomeKitObjectCollection.swift in Sources */,
-				5FB109F61BD53AE400A8F91D /* ServiceGroupViewController.swift in Sources */,
-				5FB109E81BD53AE400A8F91D /* CharacteristicsTableViewDataSource.swift in Sources */,
-				5FB109DC1BD53AE400A8F91D /* ControlsViewController.swift in Sources */,
-				5FB109DB1BD53AE400A8F91D /* ControlsTableViewDataSource.swift in Sources */,
-				5FB109FA1BD53AE400A8F91D /* ConditionCell.swift in Sources */,
-				5FB109DE1BD53AE400A8F91D /* CharacteristicCell.swift in Sources */,
-				5FB10A251BD53AF900A8F91D /* UITableViewController+Convenience.swift in Sources */,
-				5FB109F41BD53AE400A8F91D /* RoomViewController.swift in Sources */,
-				5FB10A1B1BD53AF900A8F91D /* HMActionSet+BuiltIn.swift in Sources */,
-				5FB1098F1BD53A8400A8F91D /* HMCatalogViewController.swift in Sources */,
-				5FB109ED1BD53AE400A8F91D /* ActionSetCreator.swift in Sources */,
-				5FB10A211BD53AF900A8F91D /* NSPredicate+Condition.swift in Sources */,
-				5FB10A1A1BD53AF900A8F91D /* CNMutablePostalAddress+Convenience.swift in Sources */,
-				5FB10A1F1BD53AF900A8F91D /* HMService+Properties.swift in Sources */,
-				5FB109FF1BD53AE400A8F91D /* EventTriggerViewController.swift in Sources */,
-				5FB109F31BD53AE400A8F91D /* HomeViewController.swift in Sources */,
-				5FB109981BD53AC800A8F91D /* FavoritesViewController.swift in Sources */,
-				5FB10A011BD53AE400A8F91D /* LocationTriggerViewController.swift in Sources */,
-				5FB109DD1BD53AE400A8F91D /* ModifyAccessoryViewController.swift in Sources */,
-				5FB10A051BD53AE400A8F91D /* TimerTriggerViewController.swift in Sources */,
-				5FB10A031BD53AE400A8F91D /* MapViewController.swift in Sources */,
-				5FB109F51BD53AE400A8F91D /* AddServicesViewController.swift in Sources */,
-				5FB109F71BD53AE400A8F91D /* CharacteristicSelectionViewController.swift in Sources */,
-				5FB109EC1BD53AE400A8F91D /* ActionCell.swift in Sources */,
-				5FB109DA1BD53AE400A8F91D /* AccessoryUpdateController.swift in Sources */,
-				5FB10A1C1BD53AF900A8F91D /* HMCharacteristic+Properties.swift in Sources */,
-				5FB1098E1BD53A8400A8F91D /* FibaroSetupViewController.swift in Sources */,
-				5FB109971BD53AC800A8F91D /* FavoritesManager.swift in Sources */,
-				5FB109F11BD53AE400A8F91D /* HomeListViewController.swift in Sources */,
-				5FB109E41BD53AE400A8F91D /* SwitchCharacteristicCell.swift in Sources */,
-				5FB109E21BD53AE400A8F91D /* SliderCharacteristicCell.swift in Sources */,
-				5FB10A081BD53AE400A8F91D /* AddRoomViewController.swift in Sources */,
-				5FB109F21BD53AE400A8F91D /* HomeStore.swift in Sources */,
-				5FB10A231BD53AF900A8F91D /* UIColor+Custom.swift in Sources */,
-				5FB109881BD53A6700A8F91D /* AppDelegate.swift in Sources */,
-				5FB10A041BD53AE400A8F91D /* TimerTriggerCreator.swift in Sources */,
-				5FB109D91BD53AE400A8F91D /* AccessoryBrowserViewController.swift in Sources */,
-				5FB10A071BD53AE400A8F91D /* TriggerViewController.swift in Sources */,
-				5FB10A1E1BD53AF900A8F91D /* HMHome+Properties.swift in Sources */,
-				5FB10A1D1BD53AF900A8F91D /* HMEventTrigger+Convenience.swift in Sources */,
-				5FB10A021BD53AE400A8F91D /* MapOverlayView.swift in Sources */,
-				5FB109EE1BD53AE400A8F91D /* ActionSetViewController.swift in Sources */,
-				5FB109EB1BD53AE400A8F91D /* ServicesViewController.swift in Sources */,
-				5FB10A001BD53AE400A8F91D /* LocationTriggerCreator.swift in Sources */,
-				5FB109921BD53A8400A8F91D /* TabBarController.swift in Sources */,
-				5FB109F81BD53AE400A8F91D /* CharacteristicTriggerCreator.swift in Sources */,
-				5FB109E01BD53AE400A8F91D /* SegmentedControlCharacteristicCell.swift in Sources */,
-				5FB109FC1BD53AE400A8F91D /* TimeConditionViewController.swift in Sources */,
-				5FB109F91BD53AE400A8F91D /* CharacteristicTriggerViewController.swift in Sources */,
-				5FB10A261BD53AF900A8F91D /* UIViewController+Convenience.swift in Sources */,
-				5FB109E61BD53AE400A8F91D /* TextCharacteristicCell.swift in Sources */,
-				5FB109FE1BD53AE400A8F91D /* EventTriggerCreator.swift in Sources */,
-				5FB10A221BD53AF900A8F91D /* UIAlertController+Convenience.swift in Sources */,
-				5FB109FB1BD53AE400A8F91D /* SegmentedTimeCell.swift in Sources */,
-				5FB109F01BD53AE400A8F91D /* HomeListConfigurationViewController.swift in Sources */,
-				5FB10A091BD53AE400A8F91D /* ZoneViewController.swift in Sources */,
+				5F06098B1BEE738500C5E3A8 /* TimePickerCell.swift in Sources */,
+				5F06098C1BEE738500C5E3A8 /* TriggerCreator.swift in Sources */,
+				5F06098D1BEE738500C5E3A8 /* Array+Sorting.swift in Sources */,
+				5F06098E1BEE738500C5E3A8 /* CharacteristicsViewController.swift in Sources */,
+				5F06098F1BEE738500C5E3A8 /* UIStoryboardSegue+IntendedDestination.swift in Sources */,
+				5F0609901BEE738500C5E3A8 /* ServiceCell.swift in Sources */,
+				5F0609911BEE738500C5E3A8 /* HomeKitObjectCollection.swift in Sources */,
+				5F0609921BEE738500C5E3A8 /* ServiceGroupViewController.swift in Sources */,
+				5F0609931BEE738500C5E3A8 /* CharacteristicsTableViewDataSource.swift in Sources */,
+				5F0609941BEE738500C5E3A8 /* ControlsViewController.swift in Sources */,
+				5F0609951BEE738500C5E3A8 /* ControlsTableViewDataSource.swift in Sources */,
+				5F0609961BEE738500C5E3A8 /* ConditionCell.swift in Sources */,
+				5F0609971BEE738500C5E3A8 /* CharacteristicCell.swift in Sources */,
+				5F0609981BEE738500C5E3A8 /* UITableViewController+Convenience.swift in Sources */,
+				5F0609991BEE738500C5E3A8 /* RoomViewController.swift in Sources */,
+				5F06099A1BEE738500C5E3A8 /* HMActionSet+BuiltIn.swift in Sources */,
+				5F06099B1BEE738500C5E3A8 /* HMCatalogViewController.swift in Sources */,
+				5F06099C1BEE738500C5E3A8 /* ActionSetCreator.swift in Sources */,
+				5F06099D1BEE738500C5E3A8 /* NSPredicate+Condition.swift in Sources */,
+				5F06099E1BEE738500C5E3A8 /* CNMutablePostalAddress+Convenience.swift in Sources */,
+				5F06099F1BEE738500C5E3A8 /* HMService+Properties.swift in Sources */,
+				5F0609A01BEE738500C5E3A8 /* EventTriggerViewController.swift in Sources */,
+				5F0609A11BEE738500C5E3A8 /* HomeViewController.swift in Sources */,
+				5F0609A21BEE738500C5E3A8 /* FavoritesViewController.swift in Sources */,
+				5F0609A31BEE738500C5E3A8 /* LocationTriggerViewController.swift in Sources */,
+				5F0609A41BEE738500C5E3A8 /* ModifyAccessoryViewController.swift in Sources */,
+				5F0609A51BEE738500C5E3A8 /* TimerTriggerViewController.swift in Sources */,
+				5F0609A61BEE738500C5E3A8 /* MapViewController.swift in Sources */,
+				5F0609A71BEE738500C5E3A8 /* AddServicesViewController.swift in Sources */,
+				5F0609A81BEE738500C5E3A8 /* CharacteristicSelectionViewController.swift in Sources */,
+				5F0609A91BEE738500C5E3A8 /* ActionCell.swift in Sources */,
+				5F0609AA1BEE738500C5E3A8 /* AccessoryUpdateController.swift in Sources */,
+				5F0609AB1BEE738500C5E3A8 /* HMCharacteristic+Properties.swift in Sources */,
+				5F0609AC1BEE738500C5E3A8 /* FibaroSetupViewController.swift in Sources */,
+				5F0609AD1BEE738500C5E3A8 /* FavoritesManager.swift in Sources */,
+				5F0609AE1BEE738500C5E3A8 /* HomeListViewController.swift in Sources */,
+				5F0609AF1BEE738500C5E3A8 /* SwitchCharacteristicCell.swift in Sources */,
+				5F0609B01BEE738500C5E3A8 /* SliderCharacteristicCell.swift in Sources */,
+				5F0609B11BEE738500C5E3A8 /* AddRoomViewController.swift in Sources */,
+				5F0609B21BEE738500C5E3A8 /* HomeStore.swift in Sources */,
+				5F0609B31BEE738500C5E3A8 /* UIColor+Custom.swift in Sources */,
+				5F0609B41BEE738500C5E3A8 /* AppDelegate.swift in Sources */,
+				5F0609B51BEE738500C5E3A8 /* TimerTriggerCreator.swift in Sources */,
+				5F0609B61BEE738500C5E3A8 /* AccessoryBrowserViewController.swift in Sources */,
+				5F0609B71BEE738500C5E3A8 /* TriggerViewController.swift in Sources */,
+				5F0609B81BEE738500C5E3A8 /* HMHome+Properties.swift in Sources */,
+				5F0609B91BEE738500C5E3A8 /* HMEventTrigger+Convenience.swift in Sources */,
+				5F0609BA1BEE738500C5E3A8 /* MapOverlayView.swift in Sources */,
+				5F0609BB1BEE738500C5E3A8 /* ActionSetViewController.swift in Sources */,
+				5F0609BC1BEE738500C5E3A8 /* ServicesViewController.swift in Sources */,
+				5F0609BD1BEE738500C5E3A8 /* LocationTriggerCreator.swift in Sources */,
+				5F0609BE1BEE738500C5E3A8 /* TabBarController.swift in Sources */,
+				5F0609BF1BEE738500C5E3A8 /* CharacteristicTriggerCreator.swift in Sources */,
+				5F0609C01BEE738500C5E3A8 /* SegmentedControlCharacteristicCell.swift in Sources */,
+				5F0609C11BEE738500C5E3A8 /* TimeConditionViewController.swift in Sources */,
+				5F0609C21BEE738500C5E3A8 /* CharacteristicTriggerViewController.swift in Sources */,
+				5F0609C31BEE738500C5E3A8 /* UIViewController+Convenience.swift in Sources */,
+				5F0609C41BEE738500C5E3A8 /* TextCharacteristicCell.swift in Sources */,
+				5F0609C51BEE738500C5E3A8 /* EventTriggerCreator.swift in Sources */,
+				5F0609C61BEE738500C5E3A8 /* UIAlertController+Convenience.swift in Sources */,
+				5F0609C71BEE738500C5E3A8 /* SegmentedTimeCell.swift in Sources */,
+				5F0609C81BEE738500C5E3A8 /* HomeListConfigurationViewController.swift in Sources */,
+				5F0609C91BEE738500C5E3A8 /* ZoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5F0609D81BEE738500C5E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = "FibaroHomeKitTool copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "656a9818-5d12-458c-91d2-df81b4c70138";
+			};
+			name = Debug;
+		};
+		5F0609D91BEE738500C5E3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = "FibaroHomeKitTool copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d7943d6c-1f8b-448f-9216-b55ce92bc58d";
+			};
+			name = Release;
+		};
 		DC1310DB1A14201E004E5DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,57 +683,23 @@
 			};
 			name = Release;
 		};
-		DC1310DE1A14201E004E5DB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_ON_DEMAND_RESOURCES = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/FibaroHomeKitTool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
-				PRODUCT_NAME = FibaroHomeKitTool;
-				PROVISIONING_PROFILE = "656a9818-5d12-458c-91d2-df81b4c70138";
-			};
-			name = Debug;
-		};
-		DC1310DF1A14201E004E5DB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_ON_DEMAND_RESOURCES = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/FibaroHomeKitTool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
-				PRODUCT_NAME = FibaroHomeKitTool;
-				PROVISIONING_PROFILE = "d7943d6c-1f8b-448f-9216-b55ce92bc58d";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5F0609D71BEE738500C5E3A8 /* Build configuration list for PBXNativeTarget "FibaroHomeCenterTollkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0609D81BEE738500C5E3A8 /* Debug */,
+				5F0609D91BEE738500C5E3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC1310B91A14201E004E5DB5 /* Build configuration list for PBXProject "FibaroHomeKitTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC1310DB1A14201E004E5DB5 /* Debug */,
 				DC1310DC1A14201E004E5DB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC1310DD1A14201E004E5DB5 /* Build configuration list for PBXNativeTarget "FibaroHomeKitTool" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC1310DE1A14201E004E5DB5 /* Debug */,
-				DC1310DF1A14201E004E5DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

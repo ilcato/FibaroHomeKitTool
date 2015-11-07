@@ -4,6 +4,11 @@
    <ContextStates>
       <ContextState
          contextName = "HomeListConfigurationViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:HomeListConfigurationViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "HomeViewController.((getFibaroSections in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; (([Int : String]) -&gt; ()) -&gt; ()).(closure #1):HomeViewController.swift">
@@ -15,6 +20,12 @@
          contextName = "HomeViewController.((importRooms in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(importFibaroRooms #1)([Int : String])():HomeViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "FibaroSetupViewController.viewWillDisappear(Bool) -&gt; ():FibaroSetupViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FibaroSetupViewController.viewDidLoad() -&gt; ():FibaroSetupViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "HomeListConfigurationViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():HomeListConfigurationViewController.swift">
       </ContextState>
       <ContextState
@@ -22,6 +33,9 @@
       </ContextState>
       <ContextState
          contextName = "HomeViewController.((importSections in _62397828DBD5946CEA8DA8D3D10870B3)(HomeViewController) -&gt; () -&gt; ()).(closure #1):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FibaroSetupViewController.updateHomeStoreFibaroCredentials() -&gt; ():FibaroSetupViewController.swift">
       </ContextState>
       <ContextState
          contextName = "HomeViewController.(importRooms in _62397828DBD5946CEA8DA8D3D10870B3)() -&gt; ():HomeViewController.swift">

@@ -452,6 +452,11 @@
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Apple, Inc";
+				TargetAttributes = {
+					5F0609891BEE738500C5E3A8 = {
+						DevelopmentTeam = M6974NHFYY;
+					};
+				};
 			};
 			buildConfigurationList = DC1310B91A14201E004E5DB5 /* Build configuration list for PBXProject "FibaroHomeKitTool" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -570,15 +575,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Catozzi (3CM492YHQC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Catozzi (3CM492YHQC)";
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "FibaroHomeKitTool copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "656a9818-5d12-458c-91d2-df81b4c70138";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -587,15 +593,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FibaroHomeKitTool.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "FibaroHomeKitTool copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poligonia.FibaroHomeKitTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d7943d6c-1f8b-448f-9216-b55ce92bc58d";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -14,6 +14,7 @@ class FibaroSetupViewController: UITableViewController {
     @IBOutlet weak var fibaroHost: UITextField!
     @IBOutlet weak var fibaroUserName: UITextField!
     @IBOutlet weak var fibaroPassword: UITextField!
+    @IBOutlet weak var grouping: UITextField!
 
 
     override func viewDidLoad() {
@@ -33,6 +34,10 @@ class FibaroSetupViewController: UITableViewController {
             self.fibaroPassword.text = (defaults.objectForKey("password") as! String)
         }
         
+        if let _ = defaults.objectForKey("grouping") as? String {
+            self.grouping.text = (defaults.objectForKey("grouping") as! String)
+        }
+
         self.updateHomeStoreFibaroCredentials()
         
         // Uncomment the following line to preserve selection between presentations
@@ -50,6 +55,7 @@ class FibaroSetupViewController: UITableViewController {
         defaults.setObject(self.fibaroHost.text, forKey: "host")
         defaults.setObject(self.fibaroUserName.text, forKey: "username")
         defaults.setObject(self.fibaroPassword.text, forKey: "password")
+        defaults.setObject(self.grouping.text, forKey: "grouping")
         
         defaults.synchronize()
     }
@@ -63,6 +69,7 @@ class FibaroSetupViewController: UITableViewController {
         HomeStore.sharedStore.fibaroHost = fibaroHost.text
         HomeStore.sharedStore.fibaroUserName = fibaroUserName.text
         HomeStore.sharedStore.fibaroPassword = fibaroPassword.text
+        HomeStore.sharedStore.fibaroGrouping = grouping.text
     
     }
     // MARK: - Table view data source

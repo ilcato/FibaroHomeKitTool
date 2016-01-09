@@ -24,5 +24,6 @@ class HomeStore: NSObject, HMHomeManagerDelegate {
     var fibaroHost: String?
     var fibaroUserName: String?
     var fibaroPassword: String?
+    var fibaroGrouping: String?
     
 }

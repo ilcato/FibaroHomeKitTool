@@ -575,6 +575,22 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                                     return
                                 }
                                 self.didAddHomeKitObject(newRoom)
+                                if (HomeStore.sharedStore.fibaroGrouping == "room") {
+                                    var accessory: HMAccessory?
+                                    for a in self.objectCollection.accessories {
+                                        if (a.name == name + "-Devices") {
+                                            accessory = a
+                                            break
+                                        }
+                                    }
+                                    if accessory != nil && newRoom != nil {
+                                        self.home.assignAccessory(accessory!, toRoom: newRoom!) { error in
+                                            if let error = error {
+                                                self.displayError(error)
+                                            }
+                                        }
+                                    }
+                                }
                                 // add room to zone
                                 if zone == nil {
                                     return
@@ -588,7 +604,9 @@ class HomeViewController: HMCatalogViewController, HMAccessoryDelegate {
                             }
                         }
                     }
-                    self.importDevices(rooms)
+                    if (HomeStore.sharedStore.fibaroGrouping == "none") {
+                        self.importDevices(rooms)
+                    }
                 } catch _ {
                     self.displayMessage("Error getting info from Fibaro Home Center…", message: "Check credentials")
                     return

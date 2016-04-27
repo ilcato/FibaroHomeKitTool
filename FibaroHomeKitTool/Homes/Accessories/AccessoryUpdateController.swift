@@ -45,9 +45,10 @@ class AccessoryUpdateController: NSObject, CharacteristicCellDelegate {
             dispatch_sync(self.updateQueue) {
                 if let sentValue = self.sentWrites[characteristic] {
                     completion(sentValue, nil)
+                    print(sentValue)
                     return
                 }
-
+                print(characteristic.value)
                 dispatch_async(dispatch_get_main_queue()) {
                     completion(characteristic.value, error)
                 }
